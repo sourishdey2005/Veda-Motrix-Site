@@ -38,7 +38,7 @@ export default function FeedbackLoop() {
         </div>
 
         {loopSteps.map((step, index) => {
-          const angle = (index / loopSteps.length) * 2 * Math.PI - Math.PI / 2; // angle in radians, starting from top
+          const angle = (index / loopSteps.length) * 2 * Math.PI - Math.PI / 2;
           const x = 50 + 45 * Math.cos(angle);
           const y = 50 + 45 * Math.sin(angle);
           

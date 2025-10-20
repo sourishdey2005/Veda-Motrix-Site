@@ -137,7 +137,7 @@ export default function LandingContent() {
                                     Harnessing the digital nervous system of tomorrow's vehicles. Our AI transcends mere management, offering predictive sentience for unparalleled performance, security, and efficiency.
                                 </p>
                             </div>
-                            <Link href="/dashboard" className="relative group flex h-12 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary px-5 text-sm font-bold text-primary-foreground shadow-lg shadow-primary/30 transition-all hover:scale-110 hover:shadow-primary/50 @[480px]:h-14 @[480px]:px-6 @[480px]:text-base opacity-0 animate-intro-fade-up" style={{ animationDelay: '1.2s' }}>
+                            <Link href="https://9000-firebase-studio-1760985664540.cluster-y75up3teuvc62qmnwys4deqv6y.cloudworkstations.dev/?monospaceUid=128885&embedded=0" className="relative group flex h-12 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary px-5 text-sm font-bold text-primary-foreground shadow-lg shadow-primary/30 transition-all hover:scale-110 hover:shadow-primary/50 @[480px]:h-14 @[480px]:px-6 @[480px]:text-base opacity-0 animate-intro-fade-up" style={{ animationDelay: '1.2s' }}>
                                 <span className="truncate">Initiate Interface</span>
                                 <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-0 h-0 bg-white/30 rounded-full group-hover:animate-ripple"></span>
                             </Link>
@@ -148,7 +148,7 @@ export default function LandingContent() {
             
             <section className="py-8 bg-background/50 backdrop-blur-sm overflow-hidden relative">
                 <div className="glowing-line top-0"></div>
-                <div className="flex animate-scroll-left whitespace-nowrap">
+                <div className="flex animate-scroll-left-infinite whitespace-nowrap">
                     <ScrollingBannerContent />
                     <ScrollingBannerContent />
                 </div>
@@ -359,3 +359,5 @@ export default function LandingContent() {
     
 
     
+
+
