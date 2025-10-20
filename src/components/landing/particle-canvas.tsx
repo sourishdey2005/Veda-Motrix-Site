@@ -141,5 +141,5 @@ export default function ParticleCanvas() {
     };
   }, []);
 
-  return <canvas ref={canvasRef} className="fixed top-0 left-0 w-full h-full z-0 opacity-30" />;
+  return <canvas ref={canvasRef} className="fixed top-0 left-0 w-full h-full z-0 opacity-30" data-parallax-speed="-0.5" />;
 }
