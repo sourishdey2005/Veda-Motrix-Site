@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import {
     Cog, TrendingUp, ShieldCheck, Users, MapPin, Clock, Play,
-    GitFork, Home, X, Search, Mail, Twitter, Linkedin, FilePenLine
+    GitFork, Home, X, Search, Mail, Twitter, Linkedin, FilePenLine, Menu
 } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Counter from './counter';
@@ -10,7 +10,6 @@ import Testimonials from './testimonials';
 import Faq from './faq';
 import { FeedbackLoop } from './feedback-loop';
 import { Progress } from '../ui/progress';
-import { Menu } from 'lucide-react';
 
 const getImg = (id: string) => PlaceHolderImages.find(img => img.id === id);
 
@@ -21,7 +20,7 @@ const TwitterIcon = (props: React.SVGProps<SVGSVGElement>) => (
 );
 
 const LinkedInIcon = (props: React.SVGProps<SVGSVGElement>) => (
-    <svg fill="currentColor" viewBox="0-0 256 256" {...props}>
+    <svg fill="currentColor" viewBox="0 0 256 256" {...props}>
         <path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"></path>
     </svg>
 );
@@ -115,7 +114,7 @@ export default function LandingContent() {
                 <nav className="hidden md:flex items-center gap-6">
                     <Link href="#about" className="text-white/80 hover:text-primary transition-colors hover:text-glow">About</Link>
                     <Link href="#features" className="text-white/80 hover:text-primary transition-colors hover:text-glow">Features</Link>
-                    <Link href="/dashboard" className="text-white/80 hover:text-primary transition-colors hover:text-glow">Dashboards</Link>
+                    <Link href="https://vedamotrix.netlify.app/login" className="text-white/80 hover:text-primary transition-colors hover:text-glow">Dashboards</Link>
                     <Link href="#contact" className="text-white/80 hover:text-primary transition-colors hover:text-glow">Contact</Link>
                 </nav>
                 <button className="relative group flex h-10 w-10 items-center justify-center rounded-full border border-primary/20 bg-background/50 backdrop-blur-sm transition-all hover:bg-primary/20 hover:scale-110 hover:shadow-lg hover:shadow-primary/30 md:hidden">
@@ -293,7 +292,7 @@ export default function LandingContent() {
                     <h2 className="text-glow text-3xl font-bold tracking-tight text-white sm:text-4xl animate-subtle-parallax">Ready to Command the Future?</h2>
                     <p className="mt-4 text-lg text-white/80 animate-fade-in-up" style={{ animationDelay: '0.5s' }}>Integrate VEDA-MOTRIX AI and unlock the next evolution of vehicle intelligence. The road ahead is intelligent. Are you?</p>
                     <div className="mt-8 flex justify-center">
-                        <Link href="/dashboard" className="relative group flex h-14 min-w-[84px] max-w-[480px] grow cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary px-6 text-base font-bold text-primary-foreground shadow-lg shadow-primary/30 transition-all hover:scale-110 hover:shadow-primary/50">
+                        <Link href="https://vedamotrix.netlify.app/login" className="relative group flex h-14 min-w-[84px] max-w-[480px] grow cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary px-6 text-base font-bold text-primary-foreground shadow-lg shadow-primary/30 transition-all hover:scale-110 hover:shadow-primary/50">
                             <span className="relative z-10">Request Access</span>
                             <span className="absolute top-0 left-0 w-full h-full bg-accent/50 -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
                              <span className="relative z-10">Request Access</span>
@@ -359,6 +358,7 @@ export default function LandingContent() {
     
 
     
+
 
 
 
