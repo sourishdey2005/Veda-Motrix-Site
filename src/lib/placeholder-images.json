@@ -1,3 +1,88 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "logo",
+      "description": "VEDA-MOTRIX AI Logo",
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuAQB-yzudJ0VWlt2fDWeCxbJEfg6lUdG2ZNu0d0C_7m2tnO_2BPtHKRAizlVnCf1LbPva2x20iVv3RxQVByCHs7oDoekr_kF5Zr-UFEWzGHGakbbKJbG6TxoG0AUE_QJsUFZvngvvaBgKkBaxHpeUzOCtnNS1ZVmXfBCIOZzuIGNGi6GS4P5EaxDTAhTftaCsMra-GMy1ogsvPzb1FG_YfzDaQMN7Jb30oV6UpEUvFb_bTzRxHicvRnrlyP3Rq7K1x8wvPi72WSaMsl",
+      "imageHint": "tech logo"
+    },
+    {
+      "id": "logo-footer",
+      "description": "VEDA-MOTRIX AI Logo for footer",
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuDEjsGQ3soPv8klUbZQsS5pYUw6i-5k3s1vpkUO1LLxw5UZ2eiHnbgF32b6o5rfzmFpVJzxEZ8ZI5fMR4C5vY1h2WonNch9zXM3lT-g5ZwHC-p7X0Z-ZBh_OqgnrzC_BB7A2rg6uOebfM44nFfDY2jjVCIeXVl4sUBtwTvMfLegFAXO9MDnUwhgmzlx2iVcJ35f1GJqT4R07S2pwXnJIKtpWJwXaqubKUbnzOsHSHJzjbEFulwN6jFkr-4WmHwOmnid4olqqLeXcZDs",
+      "imageHint": "tech logo"
+    },
+    {
+      "id": "hero-bg",
+      "description": "Futuristic car dashboard background",
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuBQ5sDVAYsXUkqcx684tuPhDIX4DIRxLE7nWL76lVlDNC-ixFW97animeJersNFw3PyCl3OUUbBiIYqTMnfLd8G1IaMNepIDk2McJblhwVQEGAbIq76O1Lt_tkwFZHdaiCOhwSVPt2vVG4XMm7pmMLDGa2M3bBaM0OSXcvmEIPyVceilUCybb2_FH83v-3Y5n4l2bfro9QII2C0cZqINH2OU2sJLvxsGn7JZbWcA_vq5WBRBjiC6mrOXRgZ7HjpMim2JFHIATXmTiOd",
+      "imageHint": "futuristic car"
+    },
+    {
+      "id": "demo-bg",
+      "description": "Live demonstration video background",
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuD_BtWLSgqm11vB-R-Mbi2a-B3JP_kw9ga2NkwAXvq4s0HkGpemlz4OUSGkXqQxKeuupZ3fiYtrG7qknL7AWzidOn0QHg-PLBdvqPHliPK5YpvYuZmoJWvKIuc6lZu7bQuSOU9oxgK4ivVQY3_mN40jKmQJBiPD0e2yGIdYRqfiFNkRf7iL_bSgc6Euqg1XRL45dfnCQEU-SnRtCfz9G0luvYNmPvvUAbnklemPCwAySS_X5yTVBsrdstx9HvxJcB2OhHGcl-EWc8vM",
+      "imageHint": "car dashboard"
+    },
+    {
+      "id": "architecture",
+      "description": "System Architecture Infographic",
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuCcvJt7G3vKP0H6QgUog42yrCZ4Qy3-enX4bxKxCKRzqOIKMdg_0fnejyxKOYDWnz5EIArIWsstpfrwowNOohFbs-TtvPPALs4COsT6epKj8z9ZbFLCnyxxNbEoEKH65xvxTb9rKyD97V-HSomiN8GZmdLoeJD5j3C8s__IZMec4DnsDWwA-42ijtrt7Kizn-AjRxDBvzmhIDJb89rYlrz3VzqCs6ww7wN7Q3gqYJid9b6VbQX1desqzKhMylsl-MhGS3Mc5SR-cY5b",
+      "imageHint": "data flow"
+    },
+    {
+      "id": "team-ethan",
+      "description": "Photo of Ethan Carter",
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuCFXGSBUcdYyvIBKQeJL8XnUM40mkWS1r83enkEThzBZoCo2eCJFEneCt9gGVHa4JUhUU2FpWjkn7xL9qi27RcJiY_q-NQboPmH-p0SHYZ-C0VcQ-Rq3ZZpthr0uEa36Zv8yXUImsqX8O8XRRnUsY4CCrsWOr8MrYbcq46obh4QtlgHoH12fe9RSCPP-c3zf4ASXsqhYOTT0xw2zI00o0MZ7QBANyZcdd7Vqp8gX1lsxIl07MEWE_FHM-5k0Xn6Fw7dKDH_nkUvTn8t",
+      "imageHint": "portrait man"
+    },
+    {
+      "id": "team-olivia",
+      "description": "Photo of Olivia Bennett",
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuCQr01IIq43I1DWk_ikcCv9Wz_weseg5SvjI5D1cjpX7AJiQngeMRiKryG3XJuR3pZ9gC5xZyPiPadJljuPghVYZnbNAfTBo6Pkr1flxEiUFzYwv5N-JHYJuhztKEJQhGKFs46f3gs3Ij-awDIvGTelIb7A5q794NaIXP0O26dPzx_xcC1mtppHnY-9Py680Dq6Hcy-7GEAh95pA_ULug2FCGnjOwtIctN9mvjwMtITcFAtfURGwZTTKF8OBN2eR9EW1Cw6ziZdsyMS",
+      "imageHint": "portrait woman"
+    },
+    {
+      "id": "team-noah",
+      "description": "Photo of Noah Thompson",
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuB2bvN8madug18SCu3zU5347SeoXW79mdxulKlzw6mC02xyb_bxy_5d2RFxUY70Gh0h4WeWz3YJNUktiMWCEpWuSCPWFuSryjhwP9jxwI_3UNYxbNBB9YG_D77NVZ5oCqB1X887c2qN_7YiMRG5_pk8zGLEJqCsQwbx_zbiNgbPV8blgCkkLiGaCPeR0lDgKFDf7fHFmWbv8BlyQir_W4as2hg3ThRsIx5VopglxHwMkHXqBQga-TR76Out2vkGtMHCczOk4Tbv6fXs",
+      "imageHint": "portrait man"
+    },
+    {
+      "id": "testimonial-aria",
+      "description": "Photo of Aria Chen",
+      "imageUrl": "https://images.unsplash.com/photo-1614436201459-156d322d38c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwb3J0cmFpdCUyMHdvbWFufGVufDB8fHx8MTc2MDk0MjUwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "portrait woman"
+    },
+    {
+      "id": "testimonial-jaxson",
+      "description": "Photo of Jaxson Riley",
+      "imageUrl": "https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwb3J0cmFpdCUyMG1hbnxlbnwwfHx8fDE3NjA5NDU0NDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "portrait man"
+    },
+    {
+      "id": "testimonial-zoe",
+      "description": "Photo of Zoe Iskander",
+      "imageUrl": "https://images.unsplash.com/photo-1669844444850-5acd7e8c71c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwb3J0cmFpdCUyMHdvbWFufGVufDB8fHx8MTc2MDk0MjUwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "portrait woman"
+    },
+    {
+      "id": "blog-1",
+      "description": "Futuristic car interior",
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuAIUZy3R3MeRiw1CZhEtQKVrDFyFWWvn6qO3Ne9IB3lMriJP3R7ghR78pOX6n8mfw0cOFZm1pOEii4kWVt8zlMA9j7jh_G_vR5yd1cBt5s-HBqwoM6BGOJ29YLxbllUOwxYWRVbr_t0GF-DM3BT4rmlRteUOrGFfYLbSYzG02rXpzN9F2b4yKrH-XiXe4Vj_xbKzpUUoLt2KEd1WZrt0T9KaHcCzXMbWzOb5XLBu-N0yUs7eLeF92opMwRZMHs_mdwxitPag2OlERKX",
+      "imageHint": "car interior"
+    },
+    {
+      "id": "blog-2",
+      "description": "Data visualization of a city map",
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuC7oCjUlJG3cZVJM8qIGqYMXqsjNmfw3gkewbBVM8tXbnX-2vXYNvovcFiNEZ9v3zxY3gdq2D2ZBUwiKWLeP-LdObFvV9oytalm96CiK35jX0fErnATz7-QZxNyL4iumEHOCaV7oNt2hptLkfL_wwINKjg0Hjs7Fq27Xcneba2rXf8PcrPjOM0A1oDduIiNVCFEe0HxRjdd6VA4uQ1UV7sEoub0DBr_ephJqfwH9vzGdf9aAGSsgnwefIv_ln5XY7lPDOnjJPDhLxw0",
+      "imageHint": "city map data"
+    },
+    {
+      "id": "blog-3",
+      "description": "AI Chip",
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuB18zmz-VFAQyqiiPeOFD7R2z6sN2oWPL2rPwYxYlKbVcKBvC6UHUO_nY0a0zj23KlCbLYci4LURHQFvqAwiR6eCJwDpvPQW_-8MnGftauWD0SbfulMRIBmqYvOHVIoJC17j9CRaYKu6Zm09iMpOIuWnl-DsgzuKXevr6pRCGIdtrwO1yooWcae0QJvKzmFOJAs_B0NH67Nt4jPugF29B3fbTzMg_TkOr51xxnkLpygQ6pWLMVPhwclprAmRBrfYJeN7_0z-5v0tq4U",
+      "imageHint": "ai chip"
+    }
+  ]
 }

@@ -55,21 +55,12 @@ export default {
           '4': 'hsl(var(--chart-4))',
           '5': 'hsl(var(--chart-5))',
         },
-        sidebar: {
-          DEFAULT: 'hsl(var(--sidebar-background))',
-          foreground: 'hsl(var(--sidebar-foreground))',
-          primary: 'hsl(var(--sidebar-primary))',
-          'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-          accent: 'hsl(var(--sidebar-accent))',
-          'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-          border: 'hsl(var(--sidebar-border))',
-          ring: 'hsl(var(--sidebar-ring))',
-        },
       },
       borderRadius: {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)',
+        xl: "0.75rem",
       },
       keyframes: {
         'accordion-down': {
@@ -88,12 +79,89 @@ export default {
             height: '0',
           },
         },
+        glow: {
+          '0%, 100%': { boxShadow: '0 0 8px hsl(var(--primary)), 0 0 16px hsl(var(--primary)), 0 0 24px hsl(var(--primary)), 0 0 12px hsl(var(--accent)) inset' },
+          '50%': { boxShadow: '0 0 20px hsl(var(--primary)), 0 0 35px hsl(var(--primary)), 0 0 50px hsl(var(--primary)), 0 0 18px hsl(var(--accent)) inset' },
+        },
+        fadeInUp: {
+          '0%': { opacity: '0', transform: 'translateY(20px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        revealGlow: {
+          '0%': { textShadow: '0 0 5px hsla(var(--primary), 0)', color: 'transparent' },
+          '50%': { textShadow: '0 0 15px hsl(var(--primary)), 0 0 5px rgba(255,255,255,0.3)', color: 'white' },
+          '100%': { textShadow: '0 0 10px hsl(var(--primary)), 0 0 25px hsl(var(--primary)), 0 0 5px rgba(255,255,255,0.5)', color: 'white' },
+        },
+        ripple: {
+          '0%': { width: '0', height: '0', opacity: '1'},
+          '100%': { width: '100%', height: '100%', opacity: '0'}
+        },
+        unfurl: {
+            '0%': { transform: 'scaleY(0)', transformOrigin: 'top' },
+            '100%': { transform: 'scaleY(1)', transformOrigin: 'top' }
+        },
+        loadingBar: {
+            '0%': { width: '0%' },
+            '100%': { width: '100%' }
+        },
+        scrollLeft: {
+            '0%': { transform: 'translateX(0)' },
+            '100%': { transform: 'translateX(-100%)' }
+        },
+        'subtle-parallax': {
+          from: { transform: 'translateY(0)' },
+          to: { transform: 'translateY(-5px)' },
+        },
+        glitch: {
+          '2%, 64%': { transform: 'translate(2px, 0) skew(0deg)' },
+          '4%, 60%': { transform: 'translate(-2px, 0) skew(0deg)' },
+          '62%': { transform: 'translate(0, 0) skew(5deg)' },
+        },
+        'glitch-anim-1': {
+          '0%': { clipPath: 'polygon(0 2%, 100% 2%, 100% 20%, 0 20%)' },
+          '10%': { clipPath: 'polygon(0 45%, 100% 45%, 100% 55%, 0 55%)' },
+          '20%': { clipPath: 'polygon(0 80%, 100% 80%, 100% 100%, 0 100%)' },
+          '30%': { clipPath: 'polygon(0 25%, 100% 25%, 100% 35%, 0 35%)' },
+          '40%': { clipPath: 'polygon(0 60%, 100% 60%, 100% 70%, 0 70%)' },
+          '50%': { clipPath: 'polygon(0 5%, 100% 5%, 100% 15%, 0 15%)' },
+          '60%': { clipPath: 'polygon(0 90%, 100% 90%, 100% 100%, 0 100%)' },
+          '70%': { clipPath: 'polygon(0 40%, 100% 40%, 100% 50%, 0 50%)' },
+          '80%': { clipPath: 'polygon(0 75%, 100% 75%, 100% 85%, 0 85%)' },
+          '90%': { clipPath: 'polygon(0 10%, 100% 10%, 100% 20%, 0 20%)' },
+          '100%': { clipPath: 'polygon(0 0, 100% 0, 100% 10%, 0 10%)' },
+        },
+        'glitch-anim-2': {
+          '0%': { clipPath: 'polygon(0 80%, 100% 80%, 100% 100%, 0 100%)' },
+          '10%': { clipPath: 'polygon(0 5%, 100% 5%, 100% 15%, 0 15%)' },
+          '20%': { clipPath: 'polygon(0 40%, 100% 40%, 100% 50%, 0 50%)' },
+          '30%': { clipPath: 'polygon(0 85%, 100% 85%, 100% 95%, 0 95%)' },
+          '40%': { clipPath: 'polygon(0 20%, 100% 20%, 100% 30%, 0 30%)' },
+          '50%': { clipPath: 'polygon(0 65%, 100% 65%, 100% 75%, 0 75%)' },
+          '60%': { clipPath: 'polygon(0 0, 100% 0, 100% 10%, 0 10%)' },
+          '70%': { clipPath: 'polygon(0 50%, 100% 50%, 100% 60%, 0 60%)' },
+          '80%': { clipPath: 'polygon(0 15%, 100% 15%, 100% 25%, 0 25%)' },
+          '90%': { clipPath: 'polygon(0 70%, 100% 70%, 100% 80%, 0 80%)' },
+          '100%': { clipPath: 'polygon(0 30%, 100% 30%, 100% 40%, 0 40%)' },
+        },
+        'glow-line-anim': {
+          '0%': { left: '-150%', width: '50%' },
+          '50%': { width: '100%' },
+          '100%': { left: '150%', width: '50%' },
+        }
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+        'glow': 'glow 4s ease-in-out infinite',
+        'fade-in-up': 'fadeInUp 1s ease-out forwards',
+        'reveal-glow': 'revealGlow 2.5s ease-out forwards',
+        'ripple': 'ripple 1s ease-out forwards',
+        'unfurl': 'unfurl 0.5s ease-in-out',
+        'loading-bar': 'loadingBar 3s ease-in-out forwards',
+        'scroll-left': 'scrollLeft 30s linear infinite',
+        'subtle-parallax': 'subtle-parallax 10s ease-in-out infinite alternate',
       },
     },
   },
-  plugins: [require('tailwindcss-animate')],
+  plugins: [require('tailwindcss-animate'), require('@tailwindcss/container-queries')],
 } satisfies Config;
