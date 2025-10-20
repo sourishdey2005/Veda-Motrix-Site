@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import {
   Cog, TrendingUp, ShieldCheck, Users, MapPin, Clock, Play,
-  GitFork, Home, X, Search, Plus, Mail, Twitter, Linkedin, FilePenLine
+  GitFork, Home, X, Search, Plus, Mail, Twitter, Linkedin, FilePenLine, Menu
 } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Counter from './counter';
@@ -90,7 +90,7 @@ export default function LandingContent() {
                 {getImg('logo') && <Image alt="VEDA-MOTRIX AI Logo" src={getImg('logo')!.imageUrl} width={160} height={40} className="h-10 w-auto animate-subtle-parallax" data-ai-hint={getImg('logo')!.imageHint} />}
                 <button className="relative group flex h-10 w-10 items-center justify-center rounded-full border border-primary/20 bg-background/50 backdrop-blur-sm transition-all hover:bg-primary/20 hover:scale-110 hover:shadow-lg hover:shadow-primary/30">
                     <div className="absolute inset-0 rounded-full border-2 border-primary opacity-0 group-hover:animate-ping"></div>
-                    <Menu />
+                    <Menu className="h-5 w-5" />
                 </button>
             </header>
 
@@ -317,3 +317,5 @@ export default function LandingContent() {
         </div>
     );
 }
+
+    
