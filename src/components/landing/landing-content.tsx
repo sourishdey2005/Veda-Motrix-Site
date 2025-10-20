@@ -8,6 +8,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Counter from './counter';
 import Testimonials from './testimonials';
 import Faq from './faq';
+import { Progress } from '../ui/progress';
 
 const getImg = (id: string) => PlaceHolderImages.find(img => img.id === id);
 
@@ -37,19 +38,19 @@ const scenarios = [
         icon: GitFork,
         title: 'Fleet Management',
         description: 'From logistics corporations to ride-sharing services, our platform offers granular control and AI-driven insights to optimize routes, preemptively schedule maintenance, monitor driver behavior, and reduce operational costs, ensuring your fleet operates at peak performance and safety.',
-        progress: '70%'
+        progress: 70
     },
     {
         icon: Home,
         title: 'Autonomous Vehicles',
         description: 'VEDA-MOTRIX is the cognitive engine for autonomous systems. We provide the essential real-time data processing, environmental analysis, and decision-making framework necessary for Level 4 and 5 autonomy, ensuring vehicles navigate the complexities of the real world with superhuman precision and safety.',
-        progress: '90%'
+        progress: 90
     },
     {
         icon: X,
         title: 'Logistics & Delivery',
         description: 'Revolutionize your supply chain with our AI. We optimize every facet of logistics, from warehouse-to-doorstep route planning and real-time shipment tracking to dynamic rerouting based on traffic and weather data, ensuring timely, efficient, and cost-effective delivery cycles.',
-        progress: '60%'
+        progress: 60
     }
 ];
 
@@ -175,6 +176,30 @@ export default function LandingContent() {
                             <Play className="h-8 w-8" />
                         </button>
                     </div>
+                </div>
+            </section>
+
+            <section className="px-4 py-12 sm:px-6 lg:px-8">
+                <h2 className="text-glow mb-8 text-center text-3xl font-bold tracking-tight text-white relative text-glitch">Application Scenarios</h2>
+                <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+                    {scenarios.map((scenario) => (
+                        <div key={scenario.title} className="card-hover-effect flex flex-col rounded-xl border border-primary/20 bg-background/50 p-6 backdrop-blur-sm">
+                             <div className="flex items-center gap-4 mb-4">
+                                <div className="rounded-full bg-primary/10 p-3 text-primary">
+                                    <scenario.icon className="h-6 w-6" />
+                                </div>
+                                <h3 className="text-xl font-bold text-white">{scenario.title}</h3>
+                            </div>
+                            <p className="flex-grow text-white/80">{scenario.description}</p>
+                            <div className="mt-4">
+                                <div className="flex justify-between items-center mb-1">
+                                    <span className="text-sm text-white/70">Integration Progress</span>
+                                    <span className="text-sm font-bold text-primary">{scenario.progress}%</span>
+                                </div>
+                                <Progress value={scenario.progress} className="h-2" />
+                            </div>
+                        </div>
+                    ))}
                 </div>
             </section>
 
