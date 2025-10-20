@@ -179,7 +179,7 @@ export default function LandingContent() {
                 </div>
             </section>
 
-            <section className="px-4 py-12 sm:px-6 lg:px-8">
+            <section id="scenarios" className="px-4 py-12 sm:px-6 lg:px-8 scroll-mt-20">
                 <h2 className="text-glow mb-8 text-center text-3xl font-bold tracking-tight text-white relative text-glitch">Application Scenarios</h2>
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
                     {scenarios.map((scenario) => (
@@ -326,7 +326,7 @@ export default function LandingContent() {
                 <div className="flex flex-col items-center gap-4">
                     {getImg('logo-footer') && <Image alt="VEDA-MOTRIX AI Logo" src={getImg('logo-footer')!.imageUrl} width={192} height={48} className="h-12 w-auto" data-ai-hint={getImg('logo-footer')!.imageHint} />}
                     <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-4">
-                        <a className="text-base font-normal text-white/60 transition-colors hover:text-primary hover:text-glow" href="#">Privacy Protocol</a>
+                        <Link href="/privacy" className="text-base font-normal text-white/60 transition-colors hover:text-primary hover:text-glow">Privacy Protocol</Link>
                         <a className="text-base font-normal text-white/60 transition-colors hover:text-primary hover:text-glow" href="#">Terms of Engagement</a>
                     </div>
                 </div>
