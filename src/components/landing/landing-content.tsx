@@ -302,7 +302,7 @@ export default function LandingContent() {
                             </div>
                             <div>
                                 <h3 className="text-lg font-semibold text-white">Command Center</h3>
-                                <p className="text-white/80">123 Futura Drive, Neo-Metropolis, 90210</p>
+                                <p className="text-white/80">KIIT University, Bhubaneswar, India</p>
                             </div>
                         </div>
                     </div>
@@ -339,6 +339,7 @@ export default function LandingContent() {
     
 
     
+
 
 
 
