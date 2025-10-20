@@ -1,7 +1,7 @@
 
 'use client';
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 
 const VedaLoopIcon = (props: React.SVGProps<SVGSVGElement>) => (
@@ -29,7 +29,29 @@ const loopItems = [
     { name: 'Reduced Defects', angle: 270 },
 ];
 
+type BinaryStream = {
+  key: number;
+  style: React.CSSProperties;
+  content: string;
+};
+
 export default function FeedbackLoop() {
+  const [binaryStreams, setBinaryStreams] = useState<BinaryStream[]>([]);
+
+  useEffect(() => {
+    const streams = [...Array(20)].map((_, i) => ({
+      key: i,
+      style: {
+        top: `${Math.random() * 100}%`,
+        left: `${Math.random() * 100}%`,
+        animation: `fade-and-move ${5 + Math.random() * 5}s linear infinite`,
+        animationDelay: `${Math.random() * 5}s`,
+      },
+      content: Array(Math.floor(Math.random() * 15) + 10).fill(0).map(() => Math.round(Math.random())).join('')
+    }));
+    setBinaryStreams(streams);
+  }, []);
+
   return (
     <section className="px-4 py-16 sm:px-6 lg:px-8 relative overflow-hidden">
       <div className="text-center mb-12">
@@ -71,14 +93,9 @@ export default function FeedbackLoop() {
             </div>
         ))}
          {/* Binary code streams in background */}
-         {[...Array(20)].map((_, i) => (
-            <span key={i} className="absolute text-primary/20 text-xs font-mono" style={{
-                top: `${Math.random() * 100}%`,
-                left: `${Math.random() * 100}%`,
-                animation: `fade-and-move ${5 + Math.random() * 5}s linear infinite`,
-                animationDelay: `${Math.random() * 5}s`
-            }}>
-                {Array(Math.floor(Math.random() * 15) + 10).fill(0).map(() => Math.round(Math.random())).join('')}
+         {binaryStreams.map(stream => (
+            <span key={stream.key} className="absolute text-primary/20 text-xs font-mono" style={stream.style}>
+                {stream.content}
             </span>
         ))}
       </div>
