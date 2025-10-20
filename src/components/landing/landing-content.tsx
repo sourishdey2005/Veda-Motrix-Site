@@ -18,7 +18,7 @@ const TwitterIcon = (props: React.SVGProps<SVGSVGElement>) => (
 );
 
 const LinkedInIcon = (props: React.SVGProps<SVGSVGElement>) => (
-    <svg fill="currentColor" viewBox="0 0 256 256" {...props}>
+    <svg fill="currentColor" viewBox="0-0 256 256" {...props}>
         <path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"></path>
     </svg>
 );
@@ -88,7 +88,13 @@ export default function LandingContent() {
         <div className="intro-animation">
             <header className="absolute inset-x-0 top-0 z-20 flex items-center justify-between p-4 opacity-0 animate-intro-fade-up" style={{ animationDelay: '1.5s' }}>
                 {getImg('logo') && <Image alt="VEDA-MOTRIX AI Logo" src={getImg('logo')!.imageUrl} width={160} height={40} className="h-10 w-auto animate-subtle-parallax" data-ai-hint={getImg('logo')!.imageHint} />}
-                <button className="relative group flex h-10 w-10 items-center justify-center rounded-full border border-primary/20 bg-background/50 backdrop-blur-sm transition-all hover:bg-primary/20 hover:scale-110 hover:shadow-lg hover:shadow-primary/30">
+                <nav className="hidden md:flex items-center gap-6">
+                    <Link href="#about" className="text-white/80 hover:text-primary transition-colors hover:text-glow">About</Link>
+                    <Link href="#features" className="text-white/80 hover:text-primary transition-colors hover:text-glow">Features</Link>
+                    <Link href="/dashboard" className="text-white/80 hover:text-primary transition-colors hover:text-glow">Dashboards</Link>
+                    <Link href="#contact" className="text-white/80 hover:text-primary transition-colors hover:text-glow">Contact</Link>
+                </nav>
+                <button className="relative group flex h-10 w-10 items-center justify-center rounded-full border border-primary/20 bg-background/50 backdrop-blur-sm transition-all hover:bg-primary/20 hover:scale-110 hover:shadow-lg hover:shadow-primary/30 md:hidden">
                     <div className="absolute inset-0 rounded-full border-2 border-primary opacity-0 group-hover:animate-ping"></div>
                     <Menu className="h-5 w-5" />
                 </button>
@@ -143,7 +149,7 @@ export default function LandingContent() {
                 <div className="glowing-line bottom-0" style={{ animationDelay: '-6s' }}></div>
             </section>
             
-            <section className="px-4 py-12 sm:px-6 lg:px-8 relative">
+            <section id="features" className="px-4 py-12 sm:px-6 lg:px-8 relative scroll-mt-20">
                 <div className="glowing-line top-1/4"></div>
                 <div className="glowing-line top-2/3" style={{ animationDelay: '-6s' }}></div>
                 <h2 className="text-glow mb-8 text-center text-3xl font-bold tracking-tight text-white relative text-glitch">Core Capabilities</h2>
@@ -185,7 +191,7 @@ export default function LandingContent() {
                 </div>
             </section>
             
-            <section className="px-4 py-12 sm:px-6 lg:px-8">
+            <section id="about" className="px-4 py-12 sm:px-6 lg:px-8 scroll-mt-20">
                 <h2 className="text-glow mb-4 text-center text-3xl font-bold tracking-tight text-white relative text-glitch">Our Mission</h2>
                 <p className="mx-auto max-w-3xl text-center text-base font-normal text-white/80 animate-subtle-parallax">
                     VEDA-MOTRIX AI is engineering the future of mobility. We are dedicated to creating a world where transportation is safer, more efficient, and seamlessly integrated with our digital lives. By building the most advanced AI for vehicle intelligence, we empower our partners to lead the charge in the automotive revolution, delivering solutions that are not just innovative, but transformative.
@@ -264,7 +270,7 @@ export default function LandingContent() {
                 </div>
             </section>
 
-            <section className="border-t border-primary/10 bg-background/50 px-4 py-12 backdrop-blur-sm sm:px-6 lg:px-8 relative">
+            <section id="contact" className="border-t border-primary/10 bg-background/50 px-4 py-12 backdrop-blur-sm sm:px-6 lg:px-8 relative scroll-mt-20">
                 <div className="glowing-line top-1/2"></div>
                 <div className="mx-auto max-w-3xl">
                     <h2 className="text-glow mb-8 text-center text-3xl font-bold tracking-tight text-white relative text-glitch">Establish Comms</h2>
