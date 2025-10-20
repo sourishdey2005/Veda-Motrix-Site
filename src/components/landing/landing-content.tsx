@@ -85,6 +85,27 @@ const blogPosts = [
     },
 ];
 
+const ScrollingBannerContent = () => (
+    <div className="flex shrink-0 items-center space-x-12">
+        <div className="text-center">
+            <Counter target={10000} />
+            <p className="text-white/80">Vehicles Analyzed in Real Time</p>
+        </div>
+        <div className="h-10 w-px bg-primary/30"></div>
+        <div className="text-center">
+            <Counter target={98} />
+            <p className="text-white/80">Threats Neutralized</p>
+        </div>
+        <div className="h-10 w-px bg-primary/30"></div>
+        <div className="text-center">
+            <Counter target={15} />
+            <p className="text-white/80">Efficiency Increased by %</p>
+        </div>
+        <div className="h-10 w-px bg-primary/30"></div>
+    </div>
+);
+
+
 export default function LandingContent() {
     return (
         <div className="intro-animation">
@@ -127,26 +148,9 @@ export default function LandingContent() {
             
             <section className="py-8 bg-background/50 backdrop-blur-sm overflow-hidden relative">
                 <div className="glowing-line top-0"></div>
-                <div className="flex items-center space-x-12 animate-scroll-left whitespace-nowrap">
-                    {[...Array(2)].map((_, i) => (
-                        <div key={i} className="flex items-center space-x-12">
-                            <div className="text-center">
-                                <Counter target={10000} />
-                                <p className="text-white/80">Vehicles Analyzed in Real Time</p>
-                            </div>
-                            <div className="h-10 w-px bg-primary/30"></div>
-                            <div className="text-center">
-                                <Counter target={98} />
-                                <p className="text-white/80">Threats Neutralized</p>
-                            </div>
-                            <div className="h-10 w-px bg-primary/30"></div>
-                            <div className="text-center">
-                               <Counter target={15} />
-                                <p className="text-white/80">Efficiency Increased by %</p>
-                            </div>
-                            <div className="h-10 w-px bg-primary/30"></div>
-                        </div>
-                    ))}
+                <div className="flex animate-scroll-left whitespace-nowrap">
+                    <ScrollingBannerContent />
+                    <ScrollingBannerContent />
                 </div>
                 <div className="glowing-line bottom-0" style={{ animationDelay: '-6s' }}></div>
             </section>
