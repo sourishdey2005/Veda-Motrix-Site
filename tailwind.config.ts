@@ -167,6 +167,7 @@ export default {
         'loading-bar': 'loadingBar 3s ease-in-out forwards',
         'scroll-left-infinite': 'scroll-left 30s linear infinite',
         'subtle-parallax': 'subtle-parallax 10s ease-in-out infinite alternate',
+        'intro-fade-up': 'fadeInUp 1s ease-out forwards',
       },
     },
   },
