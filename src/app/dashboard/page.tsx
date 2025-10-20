@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { BarChart, Shield, Zap, Wrench } from "lucide-react";
-import { ChartContainer, ChartTooltip, ChartTooltipContent, Bar, XAxis, YAxis } from "@/components/ui/chart"
-import { BarChart as RechartsBarChart } from "recharts";
+import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart"
+import { BarChart as RechartsBarChart, Bar, XAxis, YAxis } from "recharts";
 
 const chartData = [
   { month: "January", desktop: 186, mobile: 80 },
