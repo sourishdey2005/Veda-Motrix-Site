@@ -189,8 +189,23 @@ export default function LandingContent() {
             </section>
             
             <FeedbackLoop />
-            <Faq />
             
+            <section className="px-4 py-16 text-center sm:px-6 lg:px-8">
+                <div className="mx-auto max-w-2xl">
+                    <h2 className="text-glow text-3xl font-bold tracking-tight text-white sm:text-4xl animate-subtle-parallax">Ready to Command the Future?</h2>
+                    <p className="mt-4 text-lg text-white/80 animate-fade-in-up" style={{ animationDelay: '0.5s' }}>Integrate VEDA-MOTRIX AI and unlock the next evolution of vehicle intelligence. The road ahead is intelligent. Are you?</p>
+                    <div className="mt-8 flex justify-center">
+                        <Link href="https://vedamotrix.netlify.app/login" className="relative group flex h-14 min-w-[84px] max-w-[480px] grow cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary px-6 text-base font-bold text-primary-foreground shadow-lg shadow-primary/30 transition-all hover:scale-110 hover:shadow-primary/50">
+                            <span className="relative z-10">Request Access</span>
+                            <span className="absolute top-0 left-0 w-full h-full bg-accent/50 -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
+                             <span className="relative z-10">Request Access</span>
+                        </Link>
+                    </div>
+                </div>
+            </section>
+
+            <Faq />
+
             <section className="px-4 py-12 sm:px-6 lg:px-8 relative">
                 <div className="glowing-line bottom-1/4" style={{ animationDelay: '-5s' }}></div>
                 <h2 className="text-glow mb-8 text-center text-3xl font-bold tracking-tight text-white relative text-glitch">System Architecture</h2>
@@ -267,20 +282,6 @@ export default function LandingContent() {
                 </div>
             </section>
             
-            <section className="px-4 py-16 text-center sm:px-6 lg:px-8">
-                <div className="mx-auto max-w-2xl">
-                    <h2 className="text-glow text-3xl font-bold tracking-tight text-white sm:text-4xl animate-subtle-parallax">Ready to Command the Future?</h2>
-                    <p className="mt-4 text-lg text-white/80 animate-fade-in-up" style={{ animationDelay: '0.5s' }}>Integrate VEDA-MOTRIX AI and unlock the next evolution of vehicle intelligence. The road ahead is intelligent. Are you?</p>
-                    <div className="mt-8 flex justify-center">
-                        <Link href="https://vedamotrix.netlify.app/login" className="relative group flex h-14 min-w-[84px] max-w-[480px] grow cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary px-6 text-base font-bold text-primary-foreground shadow-lg shadow-primary/30 transition-all hover:scale-110 hover:shadow-primary/50">
-                            <span className="relative z-10">Request Access</span>
-                            <span className="absolute top-0 left-0 w-full h-full bg-accent/50 -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
-                             <span className="relative z-10">Request Access</span>
-                        </Link>
-                    </div>
-                </div>
-            </section>
-
             <section id="contact" className="border-t border-primary/10 bg-background/50 px-4 py-12 backdrop-blur-sm sm:px-6 lg:px-8 relative scroll-mt-20">
                 <div className="glowing-line top-1/2"></div>
                 <div className="mx-auto max-w-3xl">
@@ -338,6 +339,7 @@ export default function LandingContent() {
     
 
     
+
 
 
 
