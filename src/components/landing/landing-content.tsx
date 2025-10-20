@@ -1,13 +1,14 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import {
-  Cog, TrendingUp, ShieldCheck, Users, MapPin, Clock, Play,
-  GitFork, Home, X, Search, Plus, Mail, Twitter, Linkedin, FilePenLine, Menu
+    Cog, TrendingUp, ShieldCheck, Users, MapPin, Clock, Play,
+    GitFork, Home, X, Search, Plus, Mail, Twitter, Linkedin, FilePenLine, Menu
 } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Counter from './counter';
 import Testimonials from './testimonials';
 import Faq from './faq';
+import { FeedbackLoop } from './feedback-loop';
 import { Progress } from '../ui/progress';
 
 const getImg = (id: string) => PlaceHolderImages.find(img => img.id === id);
@@ -207,6 +208,7 @@ export default function LandingContent() {
                 </div>
             </section>
             
+            <FeedbackLoop />
             <Faq />
             
             <section className="px-4 py-12 sm:px-6 lg:px-8 relative">
@@ -356,6 +358,7 @@ export default function LandingContent() {
     
 
     
+
 
 
 

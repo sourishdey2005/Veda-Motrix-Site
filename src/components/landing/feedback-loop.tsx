@@ -10,7 +10,7 @@ const loopSteps = [
   { name: 'Reduced Defects' },
 ];
 
-export default function FeedbackLoop() {
+export function FeedbackLoop() {
   return (
     <section className="px-4 py-16 sm:px-6 lg:px-8">
       <h2 className="text-glow mb-2 text-center text-3xl font-bold tracking-tight text-white relative text-glitch">
@@ -28,17 +28,17 @@ export default function FeedbackLoop() {
         ></motion.div>
 
         <div className="absolute flex flex-col items-center justify-center">
-          <BrainCircuit className="w-16 h-16 text-accent" />
+          <BrainCircuit className="w-16 h-16 text-secondary" />
           <h3
-            className="text-xl font-bold text-accent mt-2"
-            style={{ textShadow: '0 0 10px hsl(var(--accent) / 0.5)' }}
+            className="text-xl font-bold text-secondary mt-2"
+            style={{ textShadow: '0 0 10px hsl(var(--secondary) / 0.5)' }}
           >
             VEDA Loop
           </h3>
         </div>
 
         {loopSteps.map((step, index) => {
-          const angle = (index / loopSteps.length) * 2 * Math.PI - Math.PI / 2;
+          const angle = (index / loopSteps.length) * 2 * Math.PI - Math.PI / 2; // angle in radians, starting from top
           const x = 50 + 45 * Math.cos(angle);
           const y = 50 + 45 * Math.sin(angle);
           
