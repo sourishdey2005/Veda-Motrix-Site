@@ -64,34 +64,39 @@ export default function FeedbackLoop() {
       </div>
 
       <div className="relative w-full flex items-center justify-center" style={{ minHeight: '500px' }}>
-        {/* Dashed Circle */}
-        <div className="absolute w-[400px] h-[400px] md:w-[500px] md:h-[500px] border-2 border-dashed border-primary/50 rounded-full animate-spin-slow"></div>
-
+        
         {/* Central Element */}
         <div className="relative z-10 flex flex-col items-center gap-2">
             <VedaLoopIcon className="w-24 h-24 text-accent animate-pulse" style={{ animationDuration: '3s' }} />
             <h3 className="text-2xl font-bold text-accent text-glow">VEDA Loop</h3>
         </div>
 
-        {/* Orbiting Items */}
-        {loopItems.map((item, index) => (
-            <div
-                key={item.name}
-                className="absolute w-40 h-20 flex items-center justify-center"
-                style={{
-                    transform: `rotate(${item.angle}deg) translate(200px) rotate(-${item.angle}deg) translateX(-50%)`,
-                    transformOrigin: '200px center',
-                    left: 'calc(50% - 200px)'
-                }}
-            >
-                <div 
-                    className="bg-background/80 backdrop-blur-sm border border-primary/20 rounded-lg px-4 py-2 text-center shadow-lg shadow-primary/10"
-                    style={{ animation: `fade-in-node 1s ease-out ${index * 0.2}s forwards`, opacity: 0 }}
+        {/* Orbiting Container */}
+        <div className="absolute w-[400px] h-[400px] md:w-[500px] md:h-[500px] animate-spin-slow">
+            {/* Dashed Circle */}
+            <div className="w-full h-full border-2 border-dashed border-primary/50 rounded-full"></div>
+            
+            {/* Orbiting Items */}
+            {loopItems.map((item, index) => (
+                <div
+                    key={item.name}
+                    className="absolute w-40 h-20 flex items-center justify-center"
+                    style={{
+                        transform: `rotate(${item.angle}deg) translate(200px) rotate(-${item.angle}deg) translateX(-50%)`,
+                        transformOrigin: '200px center',
+                        left: 'calc(50% - 200px)',
+                    }}
                 >
-                    <span className="text-white font-semibold">{item.name}</span>
+                    <div 
+                        className="bg-background/80 backdrop-blur-sm border border-primary/20 rounded-lg px-4 py-2 text-center shadow-lg shadow-primary/10"
+                        style={{ animation: `fade-in-node 1s ease-out ${index * 0.2}s forwards`, opacity: 0 }}
+                    >
+                        <span className="text-white font-semibold">{item.name}</span>
+                    </div>
                 </div>
-            </div>
-        ))}
+            ))}
+        </div>
+        
          {/* Binary code streams in background */}
          {binaryStreams.map(stream => (
             <span key={stream.key} className="absolute text-primary/20 text-xs font-mono" style={stream.style}>
