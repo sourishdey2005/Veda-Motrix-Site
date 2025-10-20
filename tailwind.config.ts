@@ -120,9 +120,9 @@ export default {
             '0%': { width: '0%' },
             '100%': { width: '100%' }
         },
-        scrollLeft: {
-            '0%': { transform: 'translateX(0)' },
-            '100%': { transform: 'translateX(-100%)' }
+        'scroll-left': {
+            'from': { transform: 'translateX(0)' },
+            'to': { transform: 'translateX(-100%)' }
         },
         'subtle-parallax': {
           from: { transform: 'translateY(0)' },
@@ -176,7 +176,6 @@ export default {
         'loading-bar': 'loadingBar 3s ease-in-out forwards',
         'scroll-left': 'scrollLeft 30s linear infinite',
         'subtle-parallax': 'subtle-parallax 10s ease-in-out infinite alternate',
-        'spin-slow': 'spin-slow 20s linear infinite',
       },
     },
   },
