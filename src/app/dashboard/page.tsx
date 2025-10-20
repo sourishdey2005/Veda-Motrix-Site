@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { BarChart, Shield, Zap, Wrench } from "lucide-react";
+import { BarChart as BarChartIcon, Shield, Zap, Wrench } from "lucide-react";
 import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart"
-import { BarChart as RechartsBarChart, Bar, XAxis, YAxis } from "recharts";
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip } from "recharts";
 
 const chartData = [
   { month: "January", desktop: 186, mobile: 80 },
@@ -65,7 +65,7 @@ export default function DashboardPage() {
         <Card className="card-hover-effect">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Active Vehicles</CardTitle>
-            <BarChart className="h-4 w-4 text-primary" />
+            <BarChartIcon className="h-4 w-4 text-primary" />
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">1,254</div>
@@ -82,13 +82,14 @@ export default function DashboardPage() {
             </CardHeader>
             <CardContent>
                 <ChartContainer config={chartConfig} className="h-[300px] w-full">
-                    <RechartsBarChart accessibilityLayer data={chartData}>
+                    <BarChart accessibilityLayer data={chartData}>
+                        <CartesianGrid vertical={false} />
                         <XAxis dataKey="month" tickLine={false} tickMargin={10} axisLine={false} tickFormatter={(value) => value.slice(0, 3)} />
                         <YAxis />
-                        <ChartTooltip content={<ChartTooltipContent />} />
+                        <Tooltip content={<ChartTooltipContent />} />
                         <Bar dataKey="desktop" fill="var(--color-desktop)" radius={4} />
                         <Bar dataKey="mobile" fill="var(--color-mobile)" radius={4} />
-                    </RechartsBarChart>
+                    </BarChart>
                 </ChartContainer>
             </CardContent>
         </Card>
