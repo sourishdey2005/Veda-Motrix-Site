@@ -21,10 +21,10 @@ const VedaLoopIcon = (props: React.SVGProps<SVGSVGElement>) => (
 
 const loopItems = [
     { name: 'Issue', angle: -90 },
-    { name: 'RCA', angle: -18 },
-    { name: 'CAPA', angle: 54 },
-    { name: 'Design Improvement', angle: 126 },
-    { name: 'Reduced Defects', angle: 198 },
+    { name: 'RCA', angle: 18 },
+    { name: 'CAPA', angle: 108 },
+    { name: 'Design\nImprovement', angle: 198 },
+    { name: 'Reduced\nDefects', angle: 288 },
 ];
 
 type BinaryStream = {
