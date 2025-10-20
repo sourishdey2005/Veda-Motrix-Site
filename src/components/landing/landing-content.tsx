@@ -1,3 +1,6 @@
+'use client';
+
+import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import {
@@ -11,6 +14,7 @@ import Faq from './faq';
 import { FeedbackLoop } from './feedback-loop';
 import { Progress } from '../ui/progress';
 import { HeroSection } from './hero-section';
+import Chatbot from './chatbot';
 
 const getImg = (id: string) => PlaceHolderImages.find(img => img.id === id);
 
@@ -108,6 +112,7 @@ const ScrollingBannerContent = () => (
 
 
 export default function LandingContent() {
+    const [isChatbotOpen, setIsChatbotOpen] = useState(false);
     return (
         <div className="intro-animation">
             <header className="absolute inset-x-0 top-0 z-20 flex items-center justify-between p-4 opacity-0 animate-intro-fade-up" style={{ animationDelay: '1.5s' }}>
@@ -328,24 +333,11 @@ export default function LandingContent() {
                 <p className="text-base font-normal text-white/60">© 2024 VEDA-MOTRIX AI. All rights reserved.</p>
             </footer>
 
-            <button className="fixed bottom-4 right-4 z-50 flex h-16 w-16 cursor-pointer items-center justify-center rounded-full border-2 border-primary bg-background/50 backdrop-blur-sm transition-all hover:scale-110 animate-glow hover:shadow-2xl hover:shadow-primary/50 group">
+            <button onClick={() => setIsChatbotOpen(true)} className="fixed bottom-4 right-4 z-50 flex h-16 w-16 cursor-pointer items-center justify-center rounded-full border-2 border-primary bg-background/50 backdrop-blur-sm transition-all hover:scale-110 animate-glow hover:shadow-2xl hover:shadow-primary/50 group">
                 <div className="absolute inset-0 rounded-full border-2 border-accent scale-150 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-500 animate-ping"></div>
                 <FilePenLine className="h-8 w-8 text-primary group-hover:text-accent transition-colors" />
             </button>
+            <Chatbot isOpen={isChatbotOpen} onClose={() => setIsChatbotOpen(false)} />
         </div>
     );
 }
-
-    
-
-    
-
-
-
-
-
-
-
-
-
-

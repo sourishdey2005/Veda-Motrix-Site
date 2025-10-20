@@ -157,9 +157,40 @@ body {
     animation-fill-mode: forwards;
     animation-timing-function: ease-out;
   }
+  .chatbot-container {
+    animation: chatbot-fade-in 0.5s ease-out forwards;
+  }
+  .chatbot-question {
+      animation: chatbot-item-fade-in 0.5s ease-out forwards;
+  }
+  .chatbot-answer {
+      animation: chatbot-item-fade-in 0.5s ease-out forwards;
+  }
 
   @keyframes data-fall {
     from { transform: translateY(-100%); }
     to { transform: translateY(100vh); }
+  }
+
+  @keyframes chatbot-fade-in {
+      from {
+          opacity: 0;
+          transform: translateY(20px) scale(0.95);
+      }
+      to {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+      }
+  }
+
+  @keyframes chatbot-item-fade-in {
+      from {
+          opacity: 0;
+          transform: translateX(-10px);
+      }
+      to {
+          opacity: 1;
+          transform: translateX(0);
+      }
   }
 }
