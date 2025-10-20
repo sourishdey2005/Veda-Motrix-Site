@@ -12,10 +12,12 @@ export default function LoginPage() {
       </div>
       <Card className="w-full max-w-md bg-background/80 backdrop-blur-sm border-primary/20 shadow-xl shadow-primary/10 z-10 card-hover-effect">
         <CardHeader className="text-center">
-          <CardTitle className="text-3xl font-bold text-glow text-glitch glitch-layers">
-            VEDA-MOTRIX AI
-            <span>VEDA-MOTRIX AI</span>
-            <span>VEDA-MOTRIX AI</span>
+          <CardTitle className="text-3xl font-bold text-glow">
+            <span className="text-glitch glitch-layers">
+              VEDA-MOTRIX AI
+              <span>VEDA-MOTRIX AI</span>
+              <span>VEDA-MOTRIX AI</span>
+            </span>
           </CardTitle>
           <CardDescription className="text-white/70">
             Authenticate to access the vehicle intelligence grid.
