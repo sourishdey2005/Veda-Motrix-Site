@@ -9,6 +9,9 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'grid-pattern': "radial-gradient(circle at center, hsl(var(--primary) / 0.1), transparent 50%)"
+      },
       fontFamily: {
         body: ['Inter', 'sans-serif'],
         headline: ['Inter', 'sans-serif'],
@@ -88,8 +91,8 @@ export default {
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
         'fade-in-node': {
-            '0%': { opacity: '0', transform: 'scale(0.9)' },
-            '100%': { opacity: '1', transform: 'scale(1)' },
+            '0%': { opacity: '0', transform: 'scale(0.9) translate(-50%, -50%)' },
+            '100%': { opacity: '1', transform: 'scale(1) translate(-50%, -50%)' },
         },
         'fade-and-move': {
             '0%': { opacity: '0', transform: 'translateY(0)' },
