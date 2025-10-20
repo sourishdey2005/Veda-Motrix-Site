@@ -39,7 +39,7 @@ export default function FeedbackLoop() {
   const [binaryStreams, setBinaryStreams] = useState<BinaryStream[]>([]);
 
   useEffect(() => {
-    const streams = [...Array(20)].map((_, i) => ({
+    const streams = Array.from({ length: 20 }).map((_, i) => ({
       key: i,
       style: {
         top: `${Math.random() * 100}%`,
@@ -51,6 +51,7 @@ export default function FeedbackLoop() {
     }));
     setBinaryStreams(streams);
   }, []);
+
 
   return (
     <section className="px-4 py-16 sm:px-6 lg:px-8 relative overflow-hidden">
@@ -72,7 +73,7 @@ export default function FeedbackLoop() {
         </div>
 
         {/* Orbiting Container */}
-        <div className="absolute w-[400px] h-[400px] md:w-[500px] md:h-[500px] animate-spin-slow">
+        <div className="absolute w-[400px] h-[400px] md:w-[500px] md:h-[500px]">
             {/* Dashed Circle */}
             <div className="w-full h-full border-2 border-dashed border-primary/50 rounded-full"></div>
             
